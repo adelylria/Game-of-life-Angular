@@ -1,0 +1,17 @@
+<div class="controls">
+    <button (click)="startGame()" [disabled]="isRunning">Start</button>
+    <button (click)="stopGame()" [disabled]="!isRunning">Stop</button>
+    <button (click)="resetGame()">Reset</button>
+  </div>
+  
+  <div class="grid">
+    <div *ngFor="let row of grid; let rowIndex = index" class="row">
+      <div 
+        *ngFor="let cell of row; let colIndex = index"
+        [class.alive]="cell"
+        (click)="toggleCell(rowIndex, colIndex)"
+        class="cell">
+      </div>
+    </div>
+  </div>
+  

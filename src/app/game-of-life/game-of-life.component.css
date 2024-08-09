@@ -1,0 +1,24 @@
+.grid {
+    display: inline-block;
+    border: 1px solid #000;
+  }
+  
+  .row {
+    display: flex;
+  }
+  
+  .cell {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+  }
+  
+  .cell.alive {
+    background-color: #333;
+  }
+  
+  .controls {
+    margin-bottom: 10px;
+  }
+  
